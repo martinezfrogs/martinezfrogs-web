@@ -371,13 +371,37 @@
     @media (prefers-reduced-motion: reduce) {
       .reveal { opacity: 1; transform: none; transition: none; }
     }
+
+    .nav-logo-text {
+      display: flex; align-items: center; gap: 0.6rem;
+    }
+    .nav-logo-mf {
+      font-family: var(--font-display);
+      font-size: 1.4rem; font-weight: 800;
+      color: var(--white);
+      background: var(--navy-mid);
+      border: 2px solid rgba(255,255,255,0.3);
+      padding: 0.15rem 0.5rem;
+      letter-spacing: 0.05em;
+    }
+    .nav-logo-name {
+      font-family: var(--font-display);
+      font-size: 1rem; font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .footer-logo-text {
+      display: flex; align-items: center; gap: 0.6rem;
+      margin-bottom: 0.8rem;
+    }
   </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <img src="LOGO-MTZ-FROGS-PRINCIPAL.png" alt="Martínez Frogs Inc." class="nav-logo" />
+  <div class="nav-logo-text"><span class="nav-logo-mf">MF</span><span class="nav-logo-name">Martínez Frogs</span></div>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#about">About</a></li>
@@ -548,7 +572,7 @@
 <!-- FOOTER -->
 <footer>
   <div>
-    <img src="LOGO-MTZ-FROGS-PRINCIPAL.png" alt="Martínez Frogs Inc." class="footer-logo" />
+    <div class="footer-logo-text"><span class="nav-logo-mf">MF</span><span class="nav-logo-name">Martínez Frogs Inc.</span></div>
     <p>Martínez Frogs Inc. — Construction + Trucking Company<br />Melrose Park, Illinois</p>
   </div>
   <div class="footer-meta">
